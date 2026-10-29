@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "geometry": {
+    "eps": 1e-12
+  },
+  "weld": {
+    "position_tolerance": 0.0001,
+    "seam_snap_ratio": 0.35,
+    "uv_tolerance": 1e-06
+  },
+  "validation": {
+    "min_faces": 1,
+    "degenerate_uv_area": 1e-12,
+    "degenerate_face_area": 1e-12,
+    "max_face_sides": 64
+  },
+  "topology": {
+    "corner_angle_deg": 35.0,
+    "seam_gap_ratio": 0.75,
+    "seam_gap_max": 0.5,
+    "seam_parallel_cos": 0.8,
+    "seam_cell_ratio": 2.0,
+    "seam_link_coverage": 0.8,
+    "seam_gap_fill_edges": 2,
+    "seam_min_run_edges": 4,
+    "guide_trim_segments": 2,
+    "attach_gap_median": 0.15,
+    "seam_gap_median": 0.15,
+    "attach_gap_samples": 16,
+    "corner_propagation_passes": 4
+  },
+  "attach": {
+    "inside": "keep"
+  },
+  "symmetry": {
+    "uv_tolerance": 0.03,
+    "samples_per_segment": 6
+  },
+  "layout": {
+    "corner_min_deg": 30.0,
+    "strong_deg": 60.0,
+    "reflex_deg": 30.0,
+    "window": 0.15,
+    "max_candidates": 10,
+    "side_balance_weight": 2.0,
+    "ring_corner_deg": 55.0,
+    "loop_corner_window": 2,
+    "loop_corner_min_deg": 40.0,
+    "loop_corner_mean_ratio": 1.5
+  },
+  "detail": {
+    "size_ratio": 4.0,
+    "edges_across": 8
+  },
+  "solver": {
+    "min_count": 1,
+    "target_edge_length": 2.0,
+    "max_gf2_columns": 4096,
+    "seam_uv_length_ratio_warn": 1.5,
+    "balance_max_steps": 400,
+    "balance_weights": {
+      "unbalanced": 4.0,
+      "odd_loop": 100.0,
+      "below_min": 20.0,
+      "drift": 1.0
+    }
+  },
+  "ring": {
+    "auto_rings": 1,
+    "max_rings": 3,
+    "depth_ratio": 1.0,
+    "shrink_steps": 3,
+    "convex_corner_turn_deg": 55.0,
+    "reflex_corner_turn_deg": 55.0,
+    "miter_min": 0.3,
+    "clearance_ratio": 0.4,
+    "clearance_skip": 4
+  },
+  "flat": {
+    "gap": 4.0,
+    "beside_gap": 20.0,
+    "curve_lift": 0.05,
+    "label_lift": 0.5,
+    "match_tolerance": 1e-06
+  },
+  "thickness": {
+    "default": 0.3,
+    "support_ratio": 0.15
+  },
+  "ui": {
+    "ring_width_range": [0.2, 2.0],
+    "density_range": [0.2, 10.0],
+    "thickness_range": [0.01, 5.0],
+    "live_delay_ms": 150,
+    "quad_budget": 25000,
+    "quad_estimate_factor": 1.8,
+    "mm_scene_size": 400.0
+  },
+  "project": {
+    "cell_tris": 4,
+    "inside_tolerance": 1e-09
+  },
+  "fill": {
+    "templates": ["grid", "npole", "annulus", "loop", "split"],
+    "score_digits": 9,
+    "corner_angle_deg": 55.0,
+    "npole_sides": [3, 5, 6],
+    "max_depth": 30,
+    "max_attempts": 4000,
+    "max_split_candidates": 12,
+    "min_split_candidates": 4,
+    "loop_any_max": 12,
+    "split_pair_pool": 48,
+    "chord_count_slack": 0.5,
+    "hole_cut_tries": 8,
+    "split_weights": {
+      "end_angle": 1.0,
+      "npole": 1.0,
+      "leftover": 2.0,
+      "not_fillable": 2.0,
+      "corner_mismatch": 1.0,
+      "chord_length": 0.05,
+      "imbalance": 0.2,
+      "count_stretch": 1.0
+    },
+    "tidy_max_passes": 200,
+    "relax_iterations": 20,
+    "relax_pin_rings": true
+  }
+}

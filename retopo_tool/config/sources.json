@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "sources": {
+    "md": {
+      "extensions": [".obj"],
+      "uv_required": true,
+      "unit_scale": 0.1
+    }
+  }
+}
